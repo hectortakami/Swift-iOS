@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C5E2735D-E7DE-44F5-8601-4E060E39A124"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Magic 8 Ball/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5 - a8dcae8b5916399b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.ViewController.ballImageView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectortakami/Documents/Github/Swift/2.%20Swift%20Basics/Magic%208%20Ball/Magic%208%20Ball/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5 - 6fcfa14f06241597"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.ViewController.ballImageView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectortakami/Documents/Github/Swift/2.%20Swift%20Basics/Magic%208%20Ball/Magic%208%20Ball/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5 - 6cc05eab75d65e84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.ViewController.ballImageView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectortakami/Documents/Github/Swift/2.%20Swift%20Basics/Magic%208%20Ball/Magic%208%20Ball/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5 - 59b33949143caede"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.ViewController.ballImageView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectortakami/Documents/Github/Swift/2.%20Swift%20Basics/Magic%208%20Ball/Magic%208%20Ball/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5 - 83018b58bd32e3de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Magic_8_Ball.ViewController"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectortakami/Documents/Github/Swift/2.%20Swift%20Basics/Magic%208%20Ball/Magic%208%20Ball/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "516">
+               </Location>
+               <Location
+                  uuid = "90C6E6EC-048B-42E2-807E-9E80BF4C77F5 - 6527b746e58ca404"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Magic_8_Ball.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Magic_8_Ball.ViewController&gt;"
+                  moduleName = "Magic 8 Ball"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectortakami/Documents/Github/Swift/2.%20Swift%20Basics/Magic%208%20Ball/Magic%208%20Ball/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "445">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84904E90-A432-40BF-9BA1-5E84A750BBD7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Magic 8 Ball/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
