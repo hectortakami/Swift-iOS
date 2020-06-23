@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://fluffy.es/allow-app-created-in-xcode-11-to-run-on-ios-12-and-lower/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Allow app created in Xcode 11 to run on iOS 12 and lower</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Downgrade iOS 13 to iOS 12_files/jdx8jgw.css">
+    <link href="./Downgrade iOS 13 to iOS 12_files/global.css" rel="stylesheet">
+    <link href="./Downgrade iOS 13 to iOS 12_files/theme.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="https://fluffy.es/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://fluffy.es/allow-app-created-in-xcode-11-to-run-on-ios-12-and-lower/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="fluffy.es - iOS development tutorials">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Allow app created in Xcode 11 to run on iOS 12 and lower">
+    <meta property="og:description" content="If you create a new app in Xcode 11 and try to run it on an iOS 12 device or lower, you will get a bunch of errors :Notice that most of these errors are related to the UIScene class and the SceneDelegate.swift file, these are related to the">
+    <meta property="og:url" content="https://fluffy.es/allow-app-created-in-xcode-11-to-run-on-ios-12-and-lower/">
+    <meta property="og:image" content="https://fluffy.es/content/images/2019/11/allow.png">
+    <meta property="article:published_time" content="2019-11-04T18:13:00.000Z">
+    <meta property="article:modified_time" content="2019-11-04T18:23:16.000Z">
+    <meta property="article:tag" content="tips">
+    <meta property="article:tag" content="xcode">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Allow app created in Xcode 11 to run on iOS 12 and lower">
+    <meta name="twitter:description" content="If you create a new app in Xcode 11 and try to run it on an iOS 12 device or lower, you will get a bunch of errors :Notice that most of these errors are related to the UIScene class and the SceneDelegate.swift file, these are related to the">
+    <meta name="twitter:url" content="https://fluffy.es/allow-app-created-in-xcode-11-to-run-on-ios-12-and-lower/">
+    <meta name="twitter:image" content="https://fluffy.es/content/images/2019/11/allow.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Axel Kee">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="tips, xcode">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    
+    <script async="" src="./Downgrade iOS 13 to iOS 12_files/tracker.js" id="fathom-script"></script><script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "fluffy.es - iOS development tutorials",
+        "logo": "https://casper.ghost.org/v1.0.0/images/ghost-logo.svg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Axel Kee",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/2c45ddec665334de89dba55fbb88149c?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "https://fluffy.es/author/axel/",
+        "sameAs": []
+    },
+    "headline": "Allow app created in Xcode 11 to run on iOS 12 and lower",
+    "url": "https://fluffy.es/allow-app-created-in-xcode-11-to-run-on-ios-12-and-lower/",
+    "datePublished": "2019-11-04T18:13:00.000Z",
+    "dateModified": "2019-11-04T18:23:16.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://fluffy.es/content/images/2019/11/allow.png",
+        "width": 400,
+        "height": 300
+    },
+    "keywords": "tips, xcode",
+    "description": "If you create a new app in Xcode 11 and try to run it on an iOS 12 device or lower, you will get a bunch of errors :Notice that most of these errors are related to the UIScene class and the SceneDelegate.swift file, these are related to the",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://fluffy.es/"
+    }
+}
+    </script>
+
+    <script src="./Downgrade iOS 13 to iOS 12_files/ghost-sdk.min.js"></script>
+<script>
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "a72ec38e16fc"
+});
+</script>
+    <meta name="generator" content="Ghost 2.25">
+    <link rel="alternate" type="application/rss+xml" title="fluffy.es - iOS development tutorials" href="https://fluffy.es/rss/">
+    <meta name="google-site-verification" content="euJy_fGrfoSufYt2YTUyQ5s_NFICV10tKVtvisAXviQ">
+<meta name="google-site-verification" content="HJvr-ZtBxd0hv5_7LufHwBHcVE3ygGY02HYdfng0v9w">
+
+        <!-- Hightlight JS -->
+    <link href="./Downgrade iOS 13 to iOS 12_files/highlightjs-tomorrow-night.css" rel="stylesheet">
+    <script src="./Downgrade iOS 13 to iOS 12_files/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+<script src="./Downgrade iOS 13 to iOS 12_files/embed.js" data-timestamp="1591230926350"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.5c5dad4ae74bbb3422efd01116dc45e6.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.7d87bb8040158de8c0a9cf48216dcb06.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.907072d563117313785716c7fb3237d9.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"></head>
+<body class="post-template tag-tips tag-xcode" data-gr-c-s-loaded="true">
+
+    
+
+<div class="header">
+  <a href="https://fluffy.es/"><h2 class="blog-title">fluffy.es - iOS development tutorials</h2></a>
+  <p class="description">UIKit, Auto Layout, Swift and more</p>
+</div>
+
+<div class="top-menu">
+  <ul class="nav" role="menu">
+    <li class="nav-all-posts" role="menuitem"><a href="https://fluffy.es/archive/">All Posts</a></li>
+    <li class="nav-free-auto-layout-course" role="menuitem"><a href="https://fluffy.es/making-sense-of-auto-layout/">Free Auto Layout Course</a></li>
+    <li class="nav-about" role="menuitem"><a href="https://fluffy.es/about/">About</a></li>
+    <li class="nav-products" role="menuitem"><a href="https://fluffy.es/products/">Products</a></li>
+    <li class="nav-newsletter" role="menuitem"><a href="https://fluffy.es/newsletter/">Newsletter</a></li>
+    <li class="nav-auto-layout-book" role="menuitem"><a href="https://autolayout.fluffy.es/">Auto Layout Book</a></li>
+    <li class="nav-sign-in-with-apple-book" role="menuitem"><a href="https://siwa.fluffy.es/?ref=topmenu">Sign in with Apple Book</a></li>
+    <li class="nav-test-push-notification" role="menuitem"><a href="https://pushever.app/">Test push notification</a></li>
+</ul>
+
+</div>
+
+ <div class="post-header">
+      <h1 class="post-title">Allow app created in Xcode 11 to run on iOS 12 and lower</h1>
+      <div class="post-meta-wrapper">
+        <span>by Axel Kee</span> <br>
+        <time class="post-meta">5 Nov 2019 <br> <a href="https://fluffy.es/tag/tips/">tips</a>, <a href="https://fluffy.es/tag/xcode/">xcode</a> </time>
+      </div>
+    </div>
+    
+    <div class="post-content">
+        <h1></h1><p>If you create a new app in Xcode 11 and try to run it on an iOS 12 device or lower, you will get a bunch of errors :</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./Downgrade iOS 13 to iOS 12_files/spookyError.png" class="kg-image" alt="errors"></figure><!--kg-card-end: image--><p></p><p>Notice that most of these errors are related to the <strong>UIScene</strong> class and the <strong>SceneDelegate.swift</strong> file, these are related to the <strong>multi-window feature</strong> introduced in iOS 13, which allows multiple windows of an app to be opened in iPad. As iOS 12 and earlier don't have these feature, we will get these error messages when trying to compile.</p><p>We will try to resolve these errors step by step in this article.</p><p>You can save the hassle by setting deployment target to iOS 13 and above, and ditch support for iOS 12 and below 😈. But keep in mind that <strong>half of the iOS devices</strong> in circulation <strong>are not</strong> using iOS 13 as of mid October 2019, according to <a href="https://developer.apple.com/support/app-store/">Apple's report</a> :</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./Downgrade iOS 13 to iOS 12_files/iOSPercentage.png" class="kg-image" alt="iOS Percentage"></figure><!--kg-card-end: image--><p></p><p>If you are dropping support for iOS 12 and below, you are denying half of the iOS users to use your app! 😱</p><h2 id="update-deployment-target">Update deployment target</h2><p>If you haven't already, change the deployment target to the lowest iOS version you want to support, select the project name then select your app target, choose <strong>General</strong> and change the version in Deployment Info.</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="./Downgrade iOS 13 to iOS 12_files/deploymentTarget.png" class="kg-image" alt="change deployment target"></figure><!--kg-card-end: image--><p></p><h2 id="-available-out-the-scenedelegate-swift">@available out the SceneDelegate.swift</h2><p>As the SceneDelegate class is only available on iOS 13 and above, we have to tell the compiler to only include the class for iOS 13 and above. To do this, we will add this line "<strong>@available(iOS 13.0, *)</strong>" right above the &nbsp;SceneDelegate class declaration like this :</p><!--kg-card-begin: code--><pre><code class="language-swift hljs"><span class="hljs-keyword">import</span> UIKit
+
+<span class="hljs-meta">@available</span>(iOS <span class="hljs-number">13.0</span>, *)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SceneDelegate</span>: <span class="hljs-title">UIResponder</span>, <span class="hljs-title">UIWindowSceneDelegate</span> </span>{
+<span class="hljs-comment">//...</span>
+}
+</code></pre><!--kg-card-end: code--><p><br></p><h2 id="-available-out-some-methods-in-appdelegate-swift">@available out some methods in AppDelegate.swift</h2><p>Next, there are two new methods added in AppDelegate.swift, which only supports iOS 13 and above. We will add the same @available(iOS 13.0, *) on top of them as well :</p><!--kg-card-begin: code--><pre><code class="language-swift hljs"><span class="hljs-comment">// AppDelegate.swift</span>
+
+<span class="hljs-meta">@available</span>(iOS <span class="hljs-number">13.0</span>, *)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions)</span></span> -&gt; <span class="hljs-type">UISceneConfiguration</span> {
+    <span class="hljs-comment">// Called when a new scene session is being created.</span>
+    <span class="hljs-comment">// Use this method to select a configuration to create the new scene with.</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-type">UISceneConfiguration</span>(name: <span class="hljs-string">"Default Configuration"</span>, sessionRole: connectingSceneSession.role)
+}
+
+<span class="hljs-meta">@available</span>(iOS <span class="hljs-number">13.0</span>, *)
+<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">application</span><span class="hljs-params">(<span class="hljs-number">_</span> application: UIApplication, didDiscardSceneSessions sceneSessions: Set&lt;UISceneSession&gt;)</span></span> {
+    <span class="hljs-comment">// Called when the user discards a scene session.</span>
+    <span class="hljs-comment">// If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.</span>
+    <span class="hljs-comment">// Use this method to release any resources that were specific to the discarded scenes, as they will not return.</span>
+}
+</code></pre><!--kg-card-end: code--><p><br></p><h2 id="add-back-the-window-to-appdelegate">Add back the window to AppDelegate</h2><p>If you build and run your app now, you will get a dark black screen 😱, because there's no UIWindow initialized.</p><p>In iOS 12 and older, there's always a <strong>var window: UIWindow?</strong> variable located at the top of AppDelegate.swft. iOS 13 has moved this variable to SceneDelegate.swift, and now we are going to add back this variable to AppDelegate.</p><!--kg-card-begin: code--><pre><code class="language-swift hljs"><span class="hljs-keyword">import</span> UIKit
+
+<span class="hljs-meta">@UIApplicationMain</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppDelegate</span>: <span class="hljs-title">UIResponder</span>, <span class="hljs-title">UIApplicationDelegate</span> </span>{
+     
+    <span class="hljs-keyword">var</span> window: <span class="hljs-type">UIWindow</span>?
+  
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre><!--kg-card-end: code--><p><br></p><p>Now Build and run your app on an iOS 12 devices, and it works! 🥳</p><p>I guess Apple really wants iOS developers to adopt and focus on iOS 13, to the extent that they don't mind breaking support for iOS 12 and older with default settings in Xcode.</p><p>If you are lazy to do these step manually every time, you can also download <a href="https://developer.apple.com/download/more/">Xcode 10.3 in the Apple's developer download portal</a> (require sign in with your Apple ID), create a new Xcode project using it, and then edit it using Xcode 11.</p><p></p><!--kg-card-begin: html--><form action="https://app.convertkit.com/forms/819700/subscriptions" style="background-color:#fff;border-radius:6px" class="seva-form formkit-form" method="post" data-sv-form="819700" data-uid="64b843391a" data-version="5" min-width="400 500 600 700"><div data-style="full"><div style="background-color:#ffffff" data-element="column" class="formkit-column"><div style="background-image:;opacity:0.3" class="formkit-background"></div><div class="formkit-header" style="color:#262626;font-size:20px;font-weight:700" data-element="header"><h1>Learn and understand how Auto Layout works</h1></div><div class="formkit-subheader" style="color:#151515;font-size:16px" data-element="subheader"><p>Have no idea what you are doing when you are adding / editing Auto Layout constraint?<br>​</p><p>In this free 6 lesson email course, you will learn :<br>1. How Auto Layout determines the position and size of a view ?</p><p>2. How to solve red lines (missing / conflicting constraint) in Interface Builder❗️</p><p>3. How to create dynamic height label and using it for dynamic layout⚡️</p></div></div><div data-element="column" class="formkit-column"><ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul><div data-element="fields" class="seva-fields formkit-fields"><div class="formkit-field"><input type="text" class="formkit-input" aria-label="Your Name" style="border-color:#e3e3e3;border-radius:4px;color:#000;font-weight:400" name="fields[first_name]" required="" placeholder="Your Name"></div><div class="formkit-field"><input type="text" class="formkit-input" name="email_address" style="border-color:#e3e3e3;border-radius:4px;color:#000;font-weight:400" placeholder="Your email address" required=""></div><button data-element="submit" class="formkit-submit formkit-submit" style="background-color:#4caa33;border-radius:5px;color:#fff;font-weight:400"><div class="formkit-spinner"><div></div><div></div><div></div></div><span>Send me Lesson 1</span></button></div><div class="formkit-guarantee" style="color:#4d4d4d;font-size:14px;font-weight:400" data-element="guarantee"><p>+ Weekly ish iOS Development tips.<br>&nbsp;<br>&nbsp;</p><p>We respect your email privacy, unsubscribe any time.</p></div></div></div><style>.formkit-form[data-uid="64b843391a"] *{box-sizing:border-box;}.formkit-form[data-uid="64b843391a"]{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.formkit-form[data-uid="64b843391a"] legend{border:none;font-size:inherit;margin-bottom:10px;padding:0;position:relative;display:table;}.formkit-form[data-uid="64b843391a"] fieldset{border:0;padding:0.01em 0 0 0;margin:0;min-width:0;}.formkit-form[data-uid="64b843391a"] body:not(:-moz-handler-blocked) fieldset{display:table-cell;}.formkit-form[data-uid="64b843391a"] h1,.formkit-form[data-uid="64b843391a"] h2,.formkit-form[data-uid="64b843391a"] h3,.formkit-form[data-uid="64b843391a"] h4,.formkit-form[data-uid="64b843391a"] h5,.formkit-form[data-uid="64b843391a"] h6{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid="64b843391a"] p{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid="64b843391a"] ol:not([template-default]),.formkit-form[data-uid="64b843391a"] ul:not([template-default]),.formkit-form[data-uid="64b843391a"] blockquote:not([template-default]){text-align:left;}.formkit-form[data-uid="64b843391a"] p:not([template-default]),.formkit-form[data-uid="64b843391a"] hr:not([template-default]),.formkit-form[data-uid="64b843391a"] blockquote:not([template-default]),.formkit-form[data-uid="64b843391a"] ol:not([template-default]),.formkit-form[data-uid="64b843391a"] ul:not([template-default]){color:inherit;font-style:initial;}.formkit-form[data-uid="64b843391a"][data-format="modal"]{display:none;}.formkit-form[data-uid="64b843391a"][data-format="slide in"]{display:none;}.formkit-form[data-uid="64b843391a"] .formkit-input,.formkit-form[data-uid="64b843391a"] .formkit-select,.formkit-form[data-uid="64b843391a"] .formkit-checkboxes{width:100%;}.formkit-form[data-uid="64b843391a"] .formkit-button,.formkit-form[data-uid="64b843391a"] .formkit-submit{border:0;border-radius:5px;color:#ffffff;cursor:pointer;display:inline-block;text-align:center;font-size:15px;font-weight:500;cursor:pointer;margin-bottom:15px;overflow:hidden;padding:0;position:relative;vertical-align:middle;}.formkit-form[data-uid="64b843391a"] .formkit-button:hover,.formkit-form[data-uid="64b843391a"] .formkit-submit:hover,.formkit-form[data-uid="64b843391a"] .formkit-button:focus,.formkit-form[data-uid="64b843391a"] .formkit-submit:focus{outline:none;}.formkit-form[data-uid="64b843391a"] .formkit-button:hover > span,.formkit-form[data-uid="64b843391a"] .formkit-submit:hover > span,.formkit-form[data-uid="64b843391a"] .formkit-button:focus > span,.formkit-form[data-uid="64b843391a"] .formkit-submit:focus > span{background-color:rgba(0,0,0,0.1);}.formkit-form[data-uid="64b843391a"] .formkit-button > span,.formkit-form[data-uid="64b843391a"] .formkit-submit > span{display:block;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;padding:12px 24px;}.formkit-form[data-uid="64b843391a"] .formkit-input{background:#ffffff;font-size:15px;padding:12px;border:1px solid #e3e3e3;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;line-height:1.4;margin:0;-webkit-transition:border-color ease-out 300ms;transition:border-color ease-out 300ms;}.formkit-form[data-uid="64b843391a"] .formkit-input:focus{outline:none;border-color:#1677be;-webkit-transition:border-color ease 300ms;transition:border-color ease 300ms;}.formkit-form[data-uid="64b843391a"] .formkit-input::-webkit-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="64b843391a"] .formkit-input::-moz-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="64b843391a"] .formkit-input:-ms-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="64b843391a"] .formkit-input::placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid="64b843391a"] [data-group="dropdown"]{position:relative;display:inline-block;width:100%;}.formkit-form[data-uid="64b843391a"] [data-group="dropdown"]::before{content:"";top:calc(50% - 2.5px);right:10px;position:absolute;pointer-events:none;border-color:#4f4f4f transparent transparent transparent;border-style:solid;border-width:6px 6px 0 6px;height:0;width:0;z-index:999;}.formkit-form[data-uid="64b843391a"] [data-group="dropdown"] select{height:auto;width:100%;cursor:pointer;color:#333333;line-height:1.4;margin-bottom:0;padding:0 6px;-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:15px;padding:12px;padding-right:25px;border:1px solid #e3e3e3;background:#ffffff;}.formkit-form[data-uid="64b843391a"] [data-group="dropdown"] select:focus{outline:none;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"]{text-align:left;margin:0;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"]{margin-bottom:10px;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] *{cursor:pointer;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"]:last-of-type{margin-bottom:0;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]{display:none;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"] + label::after{content:none;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]:checked + label::after{border-color:#ffffff;content:"";}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] input[type="checkbox"]:checked + label::before{background:#10bf7a;border-color:#10bf7a;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] label{position:relative;display:inline-block;padding-left:28px;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] label::before,.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] label::after{position:absolute;content:"";display:inline-block;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] label::before{height:16px;width:16px;border:1px solid #e3e3e3;background:#ffffff;left:0px;top:3px;}.formkit-form[data-uid="64b843391a"] [data-group="checkboxes"] [data-group="checkbox"] label::after{height:4px;width:8px;border-left:2px solid #4d4d4d;border-bottom:2px solid #4d4d4d;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);left:4px;top:8px;}.formkit-form[data-uid="64b843391a"] .formkit-alert{background:#f9fafb;border:1px solid #e3e3e3;border-radius:5px;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;list-style:none;margin:25px auto;padding:12px;text-align:center;width:100%;}.formkit-form[data-uid="64b843391a"] .formkit-alert:empty{display:none;}.formkit-form[data-uid="64b843391a"] .formkit-alert-success{background:#d3fbeb;border-color:#10bf7a;color:#0c905c;}.formkit-form[data-uid="64b843391a"] .formkit-alert-error{background:#fde8e2;border-color:#f2643b;color:#ea4110;}.formkit-form[data-uid="64b843391a"] .formkit-spinner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:0px;width:0px;margin:0 auto;position:absolute;top:0;left:0;right:0;width:0px;overflow:hidden;text-align:center;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;}.formkit-form[data-uid="64b843391a"] .formkit-spinner > div{margin:auto;width:12px;height:12px;background-color:#fff;opacity:0.3;border-radius:100%;display:inline-block;-webkit-animation:formkit-bouncedelay-formkit-form-data-uid-64b843391a- 1.4s infinite ease-in-out both;animation:formkit-bouncedelay-formkit-form-data-uid-64b843391a- 1.4s infinite ease-in-out both;}.formkit-form[data-uid="64b843391a"] .formkit-spinner > div:nth-child(1){-webkit-animation-delay:-0.32s;animation-delay:-0.32s;}.formkit-form[data-uid="64b843391a"] .formkit-spinner > div:nth-child(2){-webkit-animation-delay:-0.16s;animation-delay:-0.16s;}.formkit-form[data-uid="64b843391a"] .formkit-submit[data-active] .formkit-spinner{opacity:1;height:100%;width:50px;}.formkit-form[data-uid="64b843391a"] .formkit-submit[data-active] .formkit-spinner ~ span{opacity:0;}.formkit-form[data-uid="64b843391a"] .formkit-powered-by[data-active="false"]{opacity:0.35;}@-webkit-keyframes formkit-bouncedelay-formkit-form-data-uid-64b843391a-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}@keyframes formkit-bouncedelay-formkit-form-data-uid-64b843391a-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}.formkit-form[data-uid="64b843391a"] blockquote{padding:10px 20px;margin:0 0 20px;border-left:5px solid #e1e1e1;} .formkit-form[data-uid="64b843391a"]{box-shadow:0 2px 15px 0 rgba(210,214,220,0.5);max-width:700px;overflow:hidden;}.formkit-form[data-uid="64b843391a"] [data-style="full"]{width:100%;display:block;}.formkit-form[data-uid="64b843391a"] .formkit-header{margin-top:0;margin-bottom:20px;}.formkit-form[data-uid="64b843391a"] .formkit-subheader{margin:15px 0;}.formkit-form[data-uid="64b843391a"] .formkit-column{padding:20px;position:relative;}.formkit-form[data-uid="64b843391a"] .formkit-column:nth-child(2){border-top:1px solid #e9ecef;}.formkit-form[data-uid="64b843391a"] .formkit-background{width:100%;height:100%;position:absolute;top:0;left:0;background-size:cover;background-position:center;opacity:0.5;z-index:1;}.formkit-form[data-uid="64b843391a"] .formkit-header,.formkit-form[data-uid="64b843391a"] .formkit-subheader,.formkit-form[data-uid="64b843391a"] .formkit-image{z-index:2;position:relative;}.formkit-form[data-uid="64b843391a"] .formkit-field{margin:0 0 15px 0;}.formkit-form[data-uid="64b843391a"] .formkit-input,.formkit-form[data-uid="64b843391a"] .formkit-submit{width:100%;}.formkit-form[data-uid="64b843391a"] .formkit-guarantee{font-size:13px;margin:0 0 15px 0;}.formkit-form[data-uid="64b843391a"] .formkit-guarantee > p{margin:0;}.formkit-form[data-uid="64b843391a"] .formkit-powered-by{color:#7d7d7d;display:block;font-size:12px;margin-bottom:0;}.formkit-form[data-uid="64b843391a"][min-width~="600"] [data-style="full"],.formkit-form[data-uid="64b843391a"][min-width~="700"] [data-style="full"],.formkit-form[data-uid="64b843391a"][min-width~="800"] [data-style="full"]{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));}.formkit-form[data-uid="64b843391a"][min-width~="600"] .formkit-submit,.formkit-form[data-uid="64b843391a"][min-width~="700"] .formkit-submit,.formkit-form[data-uid="64b843391a"][min-width~="800"] .formkit-submit{width:100%;}.formkit-form[data-uid="64b843391a"][min-width~="600"] .formkit-column,.formkit-form[data-uid="64b843391a"][min-width~="700"] .formkit-column,.formkit-form[data-uid="64b843391a"][min-width~="800"] .formkit-column{padding:40px;}.formkit-form[data-uid="64b843391a"][min-width~="600"] .formkit-column:nth-child(2),.formkit-form[data-uid="64b843391a"][min-width~="700"] .formkit-column:nth-child(2),.formkit-form[data-uid="64b843391a"][min-width~="800"] .formkit-column:nth-child(2){border-top:none;} .formkit-form[data-uid="64b843391a"] .formkit-submit{display:block;width:100% !important;font-size:17px;max-width:none;}.formkit-form[data-uid="64b843391a"] .formkit-submit span{width:100%;display:block;max-width:none;}.formkit-form[data-uid="64b843391a"]::-webkit-input-placeholder{font-family:"proxima-nova","Proxima Nova",Helvetica,Verdana,sans-serif,cursive !important;}.formkit-form[data-uid="64b843391a"]::-moz-placeholder{font-family:"proxima-nova","Proxima Nova",Helvetica,Verdana,sans-serif,cursive !important;}.formkit-form[data-uid="64b843391a"]:-ms-input-placeholder{font-family:"proxima-nova","Proxima Nova",Helvetica,Verdana,sans-serif,cursive !important;}.formkit-form[data-uid="64b843391a"]:-moz-placeholder{font-family:"proxima-nova","Proxima Nova",Helvetica,Verdana,sans-serif,cursive !important;}.formkit-form[data-uid="64b843391a"] input,.formkit-form[data-uid="64b843391a"] .ck_form,.formkit-form[data-uid="64b843391a"] .ck_label,.formkit-form[data-uid="64b843391a"] .ck_subscribe_button{font-family:"proxima-nova","Proxima Nova",Helvetica,Verdana,sans-serif,cursive !important;}.formkit-form[data-uid="64b843391a"] h1,.formkit-form[data-uid="64b843391a"] h2,.formkit-form[data-uid="64b843391a"] span,.formkit-form[data-uid="64b843391a"] p{font-family:"proxima-nova","Proxima Nova",Helvetica,Verdana,sans-serif,cursive !important;}.formkit-form[data-uid="64b843391a"] .formkit-input{font-size:16px;}.formkit-form[data-uid="64b843391a"] .formkit-column{padding-top:20px !important;padding-bottom:10px !important;padding-left:20px !important;padding-right:20px !important;}.formkit-form[data-uid="64b843391a"] .formkit-image{text-align:center;}</style></form><!--kg-card-end: html-->
+    </div>
+
+    <!--<div class="post-bonus">
+      <span>
+          Tired of fighting with Auto Layout constraints? Why is it so hard to make a layout to work?! Would using code for UI and constraints make it easier? (No, not really)<br><br> If you want to understand Auto Layout fundamentally (instead of just following youtube tutorials implementing a very specific layout which doesn't apply to your app), check out my book <a href="https://autolayout.fluffy.es" style="text-decoration: underline;" target="_blank">Making Sense of Auto Layout, with practical case study!</a>
+      </span>
+      <br>
+      <blockquote>
+        “dude… wow… good job on this Auto Layout book! One of the best explanations I’ve read!” – <strong>Alex Kluew</strong>
+      </blockquote>
+    </div> -->
+    <div class="post-bonus">
+      <span>
+        Afraid that you might not be able to implement Sign in with Apple in time and get rejected? (deadline is 30th June). Wouldn't it be good to have a <strong>step by step tutorial</strong> that guide you on how to exchange authorization Code , decode identity token, generate client secret and finally authenticate the user? Plus <strong>you can implement it within a day </strong>, check out my book <a href="https://siwa.fluffy.es/?ref=bottom" style="text-decoration: underline;" target="_blank">Practical Sign in with Apple </a>, with <strong>Ruby / Python / PHP / NodeJS</strong> code samples that you can directly plug in!
+      </span>
+      <br><br>
+      <div style="text-align: center;">
+      <a href="https://siwa.fluffy.es/?ref=bottom">
+        <img src="./Downgrade iOS 13 to iOS 12_files/bookcover.png" srcset="https://siwa.fluffy.es/bookcover@2x.png 2x" alt="practical sign in with apple book" style="max-height: 200px;">
+      </a>
+      </div>
+      <br>
+    </div>
+    <!-- Hide post-subscribe -->
+
+
+    <div class="post-comment">
+      <div id="disqus_thread"><iframe id="dsq-app5607" name="dsq-app5607" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Downgrade iOS 13 to iOS 12_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 1258px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+        <script>
+        
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+        this.page.url = 'https://fluffy.es/allow-app-created-in-xcode-11-to-run-on-ios-12-and-lower/' ;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'ghost-5dc068532b012b0b9547f25a'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        var disqus_developer = 1;
+        s.src = 'https://fluffy-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+      <div class="copyright">
+         <p>
+          Copyright <strong><a href="https://fluffy.es/">fluffy.es - iOS development tutorials</a></strong> © 2020 <br>
+          Theme created by <a href="https://littlefox.es/">soulchild</a> <br><br><br>
+          Proudly published with <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="./Downgrade iOS 13 to iOS 12_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="./Downgrade iOS 13 to iOS 12_files/jquery.fitvids.js"></script>
+
+    <!-- Fathom - simple website analytics - https://usefathom.com -->
+<script>
+(function(f, a, t, h, o, m){
+a[h]=a[h]||function(){
+(a[h].q=a[h].q||[]).push(arguments)
+};
+o=f.createElement('script'),
+m=f.getElementsByTagName('script')[0];
+o.async=1; o.src=t; o.id='fathom-script';
+m.parentNode.insertBefore(o,m)
+})(document, window, 'https://cdn.usefathom.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'SZIWGRCQ');
+fathom('trackPageview');
+</script>
+<!-- / Fathom -->
+
+
+
+<iframe style="display: none;" src="./Downgrade iOS 13 to iOS 12_files/saved_resource(1).html"></iframe><script src="./Downgrade iOS 13 to iOS 12_files/ck.5.js" async="true" crossorigin="anonymous"></script></body></html>
